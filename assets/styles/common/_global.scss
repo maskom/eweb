@@ -1,0 +1,29 @@
+html {
+  font-size: 12px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 15px;
+  }
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background-color: $bg-color;
+  padding-top: 90px;
+}
+
+.content {
+  padding-bottom: 50px;
+}
+.cloudTags {
+  list-style: none;
+  padding: 0px;
+  margin-top: 15px;
+  li{
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+}
+.post-nav {
+  padding: 15px 0px;
+}

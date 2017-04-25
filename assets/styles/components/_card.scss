@@ -1,0 +1,38 @@
+.card-list-article {
+  margin-bottom: 15px;
+}
+
+.card-small{
+  margin-bottom: 5px;
+  .card-block {
+    padding: 10px;
+    .card-title {
+      font-size: rem(13);
+    }
+  }
+  .byline {
+    margin: 0px;
+    font-size: rem(12);
+    line-height: inherit;
+  }
+}
+
+
+.byline {
+  line-height: 1px;
+  margin: 10px 0px;
+  img {
+    margin-top: -2px;
+  }
+
+  a {
+    line-height: 1px;
+  }
+  .meta {
+    display: inline-block;
+    line-height: 1px;
+  }
+  .source {
+
+  }
+}

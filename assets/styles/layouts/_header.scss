@@ -1,0 +1,36 @@
+.navbar-white {
+  background-color: white;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+
+}
+.navbar-brand {
+  padding: 0px;
+  width: 35%;
+
+  img {
+    width: 100%;
+  }
+
+  .logo-mobile {
+
+  }
+}
+
+.navbar {
+
+  @include media-breakpoint-down(sm) {
+    padding: 5px 0px;
+  }
+
+  .admin-bar & {
+    margin-top: 32px;
+    @include media-breakpoint-down(sm) {
+      margin-top: 46px;
+    }
+  }
+}
+.wrap-search {
+  @include media-breakpoint-down(sm) {
+    width: 60%;
+  }
+}
