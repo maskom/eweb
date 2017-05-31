@@ -1,11 +1,10 @@
-.navbar-white {
-  background-color: white;
+.navbar-main {
+  background-color: #000;
   border-bottom: 1px solid rgba(0,0,0,.125);
 
 }
 .navbar-brand {
   padding: 0px;
-  width: 35%;
 
   img {
     width: 100%;
@@ -15,7 +14,11 @@
 
   }
 }
-
+.container_header {
+  @include media-breakpoint-down(sm) {
+   margin: 0px;
+  }
+}
 .navbar {
 
   @include media-breakpoint-down(sm) {
@@ -28,9 +31,28 @@
       margin-top: 46px;
     }
   }
+
+  a {
+
+    @include hover() {
+      text-decoration: none;
+      //color: #d83838;
+      color: #ffffff;
+    }
+  }
 }
 .wrap-search {
   @include media-breakpoint-down(sm) {
     width: 60%;
+  }
+}
+
+.menu-primary-nav-container {
+  display: inline-block;
+}
+#nav-primary {
+  li {
+    display: inline-block;
+    margin-right: 10px;
   }
 }

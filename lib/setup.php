@@ -99,6 +99,9 @@ function display_sidebar() {
  * Theme assets
  */
 function assets() {
+  wp_enqueue_style('Montserrat/font', 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700', false, null);
+  wp_enqueue_style('Poppins/font', 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700', false, null);
+  wp_enqueue_style('sansN/font', 'https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700', false, null);
   wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), false, null);
 
   if (is_single() && comments_open() && get_option('thread_comments')) {

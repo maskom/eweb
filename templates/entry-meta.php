@@ -11,23 +11,19 @@ if(!empty($favicon1)) {
     $favicon = $favicon2;
 }
 
-$categories = get_the_category();
+
 ?>
 <div class="byline">
     <?php if(!empty($host)): ?>
         <div class="source meta">
             <a href="<?php echo 'http://'.$host?>" title="<?php echo $source?>">
                 <?php if(!empty($favicon)): ?>
-                    <img src="<?php echo $favicon;?>" class="favicon"/>
+                    <span class="news__source">
+                        <img src="<?php echo $favicon;?>" class="favicon"/>
+                    </span>
                 <?php endif; ?>
                 <span><?php echo $source;?></span>
             </a>
-        </div>
-    <?php endif;?>
-    <?php if(!empty($categories)): ?>
-        - 
-        <div class="category meta">
-            <a href="<?php echo esc_url( get_category_link( $categories[0]->term_id ) );?>"><?php echo esc_html( $categories[0]->name );?></a>
         </div>
     <?php endif;?>
 </div>
